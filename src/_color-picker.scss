@@ -1,15 +1,15 @@
 .value {
-    border-left: 2.4rem solid #000;
-    padding-left: 1rem;
-    margin-top: 2rem;
-}
-
-.buttons {
-    margin-top: 2rem;
-}
-
-.buttons button {
-    margin: 0 1rem 1rem 0;
-    padding: 1rem 2rem;
+    font-family: monospace;
+    margin-top: 20px;
+  }
+  
+  .buttons {
+    margin-top: 20px;
+  }
+  
+  .buttons button {
+    margin: 0 8px 8px 0;
+    padding: 2px 8px;
+    font: inherit;
     cursor: pointer;
-}
+  }
