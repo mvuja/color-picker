@@ -1,26 +1,25 @@
-import React, { useState } from "react";
-import { RgbaColorPicker } from "react-colorful";
+import React, { useState, useEffect } from "react"
+import { RgbaColorPicker } from "react-colorful"
 import './_color-picker.scss'
 
 const App = () => {
-  const [color, setColor] = useState({ r: 200, g: 150, b: 35, a: 0.5 })
+  const [color, setColor] = useState({ r: 145, g: 109, b: 249, a: 1 })
 
   return (
-    <div className="App">
+    <>
       <RgbaColorPicker color={color} onChange={setColor} />
 
-      {/* <div className="value">{JSON.stringify(color)}</div> */}
+      <div className="value" style={{backgroundColor: `rgba(${color.r}, ${color.g}, ${color.b}, ${color.a})`}}></div>
 
       <div className="buttons">
-        <button onClick={() => setColor({ r: 75, g: 75, b: 150, a: 1 })}>
-          Choose blue
-        </button>
-        <button onClick={() => setColor({ r: 50, g: 150, b: 50, a: 1 })}>
-          Choose green
-        </button>
+        <button className="purple" onClick={() => setColor({ r: 145, g: 109, b: 249, a: 1 })}></button>
+        <button className="blue" onClick={() => setColor({ r: 16, g: 223, b: 212, a: 1 })}></button>
+        <button className="green" onClick={() => setColor({ r: 6, g: 254, b: 73, a: 1 })}></button>
+        <button className="orange" onClick={() => setColor({ r: 247, g: 156, b: 28, a: 1 })}></button>
+        <button className="red" onClick={() => setColor({ r: 242, g: 51, b: 63, a: 1 })}></button>
       </div>
-    </div>
-  );
+    </>
+  )
 }
 
 export default App

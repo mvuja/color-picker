@@ -1,15 +1,35 @@
 .value {
-    font-family: monospace;
-    margin-top: 20px;
+    height: 5rem;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    margin: 2rem auto;
   }
   
   .buttons {
-    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
   }
   
   .buttons button {
-    margin: 0 8px 8px 0;
-    padding: 2px 8px;
+    width: 3rem;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
     font: inherit;
     cursor: pointer;
+
+    &.purple{
+      background: rgb(145, 109, 249);
+    }
+    &.blue{
+      background: rgb(16, 223, 212);
+    }
+    &.green{
+      background: rgb(6, 254, 73);
+    }
+    &.orange{
+      background: rgb(247, 156, 28);
+    }
+    &.red{
+      background: rgb(242, 51, 63);
+    }
   }
